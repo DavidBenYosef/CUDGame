@@ -1,0 +1,74 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<!-- General stylesheet -->
+    <link rel="stylesheet" type="text/css" 
+          href="http://cdn.cloudwall.me/1.2/general.css" />
+          
+          <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+
+    
+<script src="adminjs.js"></script>
+<style>
+body {
+       width: 90%;
+    margin: auto;
+}
+
+</style>
+<title>Admin configuration for CUD</title>
+</head>
+<body onunload="closeSocket()">
+           
+<h1>Admin configuration for CUD</h1>
+				
+				
+				
+				<div id="login">
+				Password: <input id="pass" name="pass" value="" type="text"><br/>
+				<input id="Connect" onclick="connect()" value="Connect" type="button">
+				</div> 
+				<div id="props" hidden="true">
+				<h1><b><label for="switch" id="checkLabel"></label></b></h1>
+				<input type="button" id="switch" onclick="toggleGame()" value="Switch Game">
+				<input id="Test" onclick="sendTxt('TEST')" value="Test Connection" type="button" >
+				<br/>
+				<table>
+				<tr>
+				<td>Rounds: </td><td><input id="rounds" name="rounds" value="" type="text" ></td>
+				</tr><tr>
+				<td>Time per Round:</td><td><input id="timePerRound" name="timePerRound" value="" type="text" ></td>
+				</tr><tr>
+				<td>Voters: </td><td><input id="voters" name="voters" value="" type="text" ></td>
+				</tr><tr>
+				<td>Introduction Games:</td><td><input id="introGames" name="introGames" value="" type="text" ></td>
+				</tr><tr>
+				<td>Games Limit:</td><td><input id="gamesLimit" name="gamesLimit" value="" type="text" ></td>
+				</tr><tr>
+				<td>Score Limit:</td><td><input id="scoreLimit" name="scoreLimit" value="" type="text" ></td>
+				</tr><tr>
+				<td>New Agent Timer:</td><td><input id="agentTimer" name="agentTimer" value="" type="text" ></td>
+				</tr>
+				</table>
+				<br/>	
+				
+			Preferences set: <br/>
+			<input type="radio" id="sushi5000_10" name="cands" value="sushi5000_10"><label for="sushi5000_10">sushi5000_10</label><br/>
+  			<input type="radio" id="courses_2003" name="cands" value="courses_2003"><label for="courses_2003">courses_2003</label><br/>
+  			<input type="radio" id="courses_2004" name="cands" value="courses_2004"><label for="courses_2004">courses_2004</label><br/>
+  			<input type="radio" id="tshirts" name="cands" value="tshirts"><label for="tshirts">tshirts</label><br>
+  			<input type="radio" id="uniform_5" name="cands" value="uniform_5"><label for="uniform_5">uniform_5</label><br>
+				
+				<br/>
+						
+		<input id="getStatus" onclick="sendTxt('STATUS')" value="Get Status" type="button" >			
+		<input id="totalGames" onclick="sendTxt('TOTAL')" value="Total Games" type="button" >	
+		<input id="addAgent" onclick="addAgent()" value="Add Agents" type="button" >
+		<input id="agentsNum" name="agentsNum" value="" type="text" >
+		<input id="server" name="server" value="" type="text" >
+				
+		<textarea rows="10" cols="50" id="log"></textarea><br/>
+		<a href="../examples/websocket/chat.xhtml" target="_blank">Help Chat</a>
+				</div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name=viewport content='width=700'>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="TimeCircles.js"></script>
+<script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<link href="TimeCircles.css" rel="stylesheet">
+<script src="js.js"></script>
+<script src="circles.min.js"></script>
+<script src="jquery-lang.js" charset="utf-8" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>CUD Game</title>
+<script type="text/javascript">
+	// Create language switcher instance
+	var lang = new Lang();
+	lang.dynamic('he', 'langpack/he.json');
+	lang.dynamic('en', 'langpack/en.json');
+	lang.init({
+		defaultLang : 'code'
+	});
+	lang.change('he');
+</script>
+
+</head>
+
+<body onunload="closeSocket()">
+	<div>
+		<select id="selectBox" onchange="switchLang(value);">
+			<option value="he">Hebrew</option>
+			<option value="en">English</option>
+		</select> <a href="../examples/websocket/chat.xhtml" target="_blank"><img
+			src="gfx/qmark.jpg" title="Help Chat" /></a>
+	</div>
+	<div id="intro">
+		<p lang="code">
+			{INTRO1}<br /> {INTRO2}<br /> {INTRO3}<b lang="code">{INTRO4}</b><br />
+			{INTRO5}<br /> {INTRO6}<br /> {INTRO7}<br /> {INTRO8}<br />
+			{INTRO9} <br /> {INTRO10}
+		</p>
+		<input id="agreement" type="checkbox" onchange="agreement(this)"><label
+			for="agreement" lang="code">{AGREE}</label><br /> <input
+			onclick="showPage()" id="gotit" value="{GOT_IT}" type="button"
+			lang="code" disabled="disabled"><br /> <img
+			src="gfx/intro.jpg" />
+	</div>
+
+
+	<div id="page" hidden="true">
+
+		<div id="loginForm">
+			<div id="login">
+				<table class="center">
+					<tr>
+						<td><label for="name" lang="code">{NAME}</label></td>
+						<td><input id="name" value="" type="text"></td>
+					</tr>
+					<tr>
+						<td><label for="uid" lang="code">{ID}</label></td>
+						<td><input id="uid" value="" type="text"></td>
+					</tr>
+				</table>
+
+				<input onclick="connect()" value="{CONNECT}" type="button"
+					lang="code">
+			</div>
+			<span id="logout" hidden="true" lang="code">{HI}<span
+				id="user"></span> <input onclick="closeSocket()"
+				value="{DISCONNECT}" type="button" lang="code"> <input
+				onclick="getMyScore()" value="{MY_SCORE}" type="button" lang="code">
+				<br /> <span id="myscore"></span>
+			</span>
+
+		</div>
+		<div id="users" hidden="true" lang="code">
+			{CONNECTED_USERS}<span id="voters"></span>{OUT_OF}<span
+				id="totalVoters"></span>
+		</div>
+		<div id="introGame" lang="code" hidden="true">{INTRO_GAME}</div>
+
+		<div class="line"></div>
+
+		<div id="wrapper">
+
+			<div id="round" hidden="true" lang="code">
+				{ROUNDS_LEFT}
+				<div id="canvas">
+					<div class="circle" id="roundCircle"></div>
+				</div>
+				<span id="warn" lang="code">{WARNING}</span>
+			</div>
+			<div class="line"></div>
+
+			<div id="select"></div>
+			<div class="line"></div>
+		</div>
+		<div id="info" lang="code"></div>
+		<div class="line"></div>
+		<span id="newRound" hidden="true"><input onclick="newRound()"
+			value="{NEW_GAME}" type="button" lang="code"></span>
+
+		<div class="line"></div>
+		<div id="CountDownTimer"></div>
+
+		
+		
+	</div>
+
+
+
+</body>
+</html>

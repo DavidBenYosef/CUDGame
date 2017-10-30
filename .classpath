@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry including="**/*.java" kind="src" output="target/classes" path="src">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/annotations-api.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/catalina.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/catalina-ant.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/catalina-ha.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/catalina-storeconfig.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/catalina-tribes.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/cdi-api-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/classmate-1.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/commons-lang3-3.4.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/ecj-4.4.2.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/el-api.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/el-api-2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/geronimo-jta_1.1_spec-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/gson-2.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/hibernate-commons-annotations-5.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/hibernate-core-5.2.2.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/jandex-2.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/jasper.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/jasper-el.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/javassist-3.20.0-GA.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/javax.inject-1.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/javax.json-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/jboss-logging-3.3.0.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/jsp-api.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/jsr250-api-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/mysql-connector-java-5.1.38-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/tomcat-api.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/tomcat-coyote.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/tomcat-dbcp.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/tomcat-i18n-es.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/tomcat-i18n-fr.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/tomcat-i18n-ja.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/tomcat-jdbc.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/tomcat-jni.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/tomcat-util.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/tomcat-util-scan.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/tomcat-websocket.jar"/>
+	<classpathentry kind="lib" path="C:/Tomcat 8.0/lib/websocket-api.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

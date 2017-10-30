@@ -1,0 +1,179 @@
+@font-face {
+   font-family: myFonts;
+   src: url(fonts/carmelitregular.woff);
+}
+
+
+body {
+     width: 90%;
+    margin: auto;
+    text-align: center;
+    direction:rtl; 
+    font-family: myFonts,Arial, 'Helvetica Neue', Helvetica, sans-serif; 
+    background-color:#2eafb5;
+    font-size:30px;	
+}
+
+#logout{
+/*text-align: right;
+*/
+}
+
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+
+#page {
+
+     
+}
+
+#users {
+	/*float: left;
+*/
+	
+}
+
+#loginForm {
+	/*float: right;
+*/
+}
+
+#warn {
+	color:#2fb0b9;
+}
+
+.line {
+	clear: both;
+}
+
+#info{
+	text-align: center;
+	font-size:34px;
+	font-weight:bold;	
+
+}
+
+#introGame{
+	text-align: center;
+	font-size:34px;
+	font-weight:bold;	
+
+}
+
+#rounds{
+	text-align: center;
+	font-size:34px;	
+	font-weight:bold;
+
+}
+#CountDownTimer{
+	width: 100px;
+	margin:auto;
+}
+
+.score{
+
+	color:black;
+	
+	font-weight: bold;
+}
+
+#candsContainer{
+
+}
+
+.candDiv{
+	
+	width:110px;
+	display:inline-block;
+	margin:6px 6px 6px 6px;
+
+}
+
+.selectedLink{
+	display:block;
+border: 5px solid black;
+text-align: center;
+	
+}
+
+.nextSelectedLink{
+	display:block;
+border: 5px solid #f16a44;
+text-align: center;
+	
+}
+
+.link{
+display:block;
+border: 5px solid #536e32;
+text-align: center;	
+}
+
+.inline{
+	display:inline;
+}
+
+a.link:hover{
+	border: 5px solid #f16a44;
+}
+
+
+.candResults{
+width:100px;
+margin:5px 5px 5px 5px;
+}
+
+.candLine{
+	height:5pt;
+	margin-top: 3px;
+}
+
+.candLine1, .candLine7, .candLine13 ,.candLine19{
+	background-color:#d3ce3e;
+}
+.candLine2, .candLine8, .candLine14 ,.candLine20{
+	background-color:#f26a44;
+}
+.candLine3, .candLine9, .candLine15,.candLine21{
+	background-color:#2fb0b9;
+}
+.candLine4, .candLine10, .candLine16,.candLine22{
+	background-color:#3e3d31;
+}
+.candLine5, .candLine11, .candLine17,.candLine23{
+	background-color:#fddc7c;
+}
+.candLine6, .candLine12, .candLine18,.candLine24{
+	background-color:#fffcea;
+}
+
+
+.candTotal{
+
+	color:black;
+	text-align: center;
+}
+
+.candTotal1,.candTotal7,.candTotal13,.candTotal19{
+	color:#d3ce3e;
+}
+.candTotal2,.candTotal8,.candTotal14,.candTotal20{
+	color:#f26a44;
+}
+.candTotal3,.candTotal9,.candTotal15,.candTotal21{
+	color:#2fb0b9;
+}
+.candTotal4,.candTotal10,.candTotal16,.candTotal22{
+	color:#3e3d31;
+}
+.candTotal5,.candTotal11,.candTotal17,.candTotal23{
+	color:#fddc7c;
+}
+.candTotal6,.candTotal12,.candTotal18,.candTotal24{
+	color:#fffcea;
+}
+
+
